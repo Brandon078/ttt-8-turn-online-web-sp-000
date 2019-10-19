@@ -42,6 +42,9 @@ def turn(board)
 end
 
 def move(board, location, current_player)
-  board[location.to_i-1] = current_player
-  expect(board).to eq(["O", " ", " ", " ", " ", " ", " ", " ", "X"])
+  if board[location.to_i-1] = current_player
+    do
+      expect(board).to eq(["O", " ", " ", " ", " ", " ", " ", " ", "X"])
+    end
+end
 end
