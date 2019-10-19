@@ -44,7 +44,7 @@ end
 def move(board, location, current_player)
   if board[location.to_i-1] = current_player
     do
-      expect(board).to eq(["O", " ", " ", " ", " ", " ", " ", " ", "X"])
+      expect(board[locatioon.to_i-1]).to eq(["O", " ", " ", " ", " ", " ", " ", " ", "X"])
     end
 end
 end
